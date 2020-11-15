@@ -15,12 +15,18 @@
         <h1>Simple Todo List</h1>
     </header>
     <form>
-        <input type="text" class="todo-input" placeholder="Add something to do...">
+        <input type="text" class="todo-input">
         <button class="todo-button" type="submit"><i class="fas fa-plus"></i> Add it</button>
+        <div class="select">
+            <select name="todos"  class="filter-todo">
+                <option value="all">All</option>
+                <option value="done">Done</option>
+                <option value="undone">In progress..</option>
+            </select>
+        </div>
     </form>
     <div class="todo-container">
-        <ul class="todo-list">
-        </ul>
+        <ul class="todo-list"></ul>
     </div>
 
     <script src="app.js"></script>
